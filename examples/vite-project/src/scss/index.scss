@@ -1,0 +1,19 @@
+$orange-color: #ffaa55;
+
+.catInfo {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.red {
+  color : $orange-color;
+  &__inner {
+    color: $orange-color;
+  }
+}
+button {
+
+  color : $orange-color;
+}
