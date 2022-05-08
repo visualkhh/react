@@ -32,3 +32,13 @@ Next.js
 ## tailwind
 * https://tailwindcss.com/docs/guides/nextjs
   * https://github.com/vercel/next.js/tree/4d4f3093019179b1928ec07c16f38882241c0375/examples/with-tailwindcss
+
+## SWR
+* https://swr.vercel.app/ko/docs/options
+
+## react-query
+* https://react-query.tanstack.com/
+
+## rxjs
+* https://www.youtube.com/watch?v=xUFxB23s9R4
+* https://www.youtube.com/watch?v=EsIYiRpDZuA
