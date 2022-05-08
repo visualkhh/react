@@ -16,10 +16,10 @@ export default function Test() {
     const incrementByAmount = useCallback((value: number) => {
         dispatch(counterActions.incrementByAmount(value));
     }, [dispatch]);
-    return (<div><h1>Counter</h1>
-        <button onClick={() => minus({value})}>-</button>
+    return (<div className="text-3xl font-bold underline"><h1>Counter</h1>
+        <button className={'py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none'} onClick={() => minus({value})}>-</button>
         <span>{value}</span>
-        <button onClick={() => plus({value})}>+</button>
-        <button onClick={() => incrementByAmount(33)}>+33</button>
+        <button className={'py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none'} onClick={() => plus({value})}>+</button>
+        <button className={'py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none'} onClick={() => incrementByAmount(33)}>+33</button>
     </div>);
 }

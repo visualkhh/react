@@ -28,3 +28,7 @@ Next.js
 * https://blog.rhostem.com/posts/2020-03-04-redux-toolkits
 * https://cotak.tistory.com/164
 * https://velog.io/@chaerin00/Redux-Redux-toolkit-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
+
+## tailwind
+* https://tailwindcss.com/docs/guides/nextjs
+  * https://github.com/vercel/next.js/tree/4d4f3093019179b1928ec07c16f38882241c0375/examples/with-tailwindcss
