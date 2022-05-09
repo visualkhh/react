@@ -21,7 +21,7 @@ import {observer} from "mobx-react-lite";
 //     }
 // }
 // const myTimer = new Timer();
-const CountPage = observer(() => {
+const CountPage = () => {
     // const { count } = React.useContext(MobXProviderContext);
     const { count } = useMobxStores();
     return (
@@ -34,9 +34,9 @@ const CountPage = observer(() => {
             </div>
         </div>
     );
-})
+}
 
-export default CountPage;
+export default observer(CountPage);
 // export default observer(() => {
 //     const { count } = React.useContext(MobXProviderContext);
 //     return (

@@ -1,6 +1,7 @@
 import {useCallback, useEffect, useState} from "react";
 import {RpcBreeds} from "../api/RpcBreeds";
 import {RpcCategories} from "../api/RpcCategories";
+import {RpcUser} from "../api/RpcUser";
 
 export default () => {
     const [data, setData] = useState('-');
@@ -10,13 +11,21 @@ export default () => {
     useEffect(() => {
         rpcBreeds.sendPromise()?.then(r => {
             setData(r[0].name);
+        }).catch(it => {
+
         });
     }, []);
-    useEffect(() => {
-        rpcCategories.sendPromise()?.then(r => {
-            setCategories(r);
-        });
-    }, []);
+
+    new RpcUser('F').sendPromise()?.then(it => {
+        setData(it[0].name);
+    }).catch(e => {
+        console.log('fail!')
+    });
+    // useEffect(() => {
+    //     rpcCategories.sendPromise()?.then(r => {
+    //         setCategories(r);
+    //     });
+    // }, []);
     return (
         <div className="text-3xl font-bold underline">
             <h1>api</h1>

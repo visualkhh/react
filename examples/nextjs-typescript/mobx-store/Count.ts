@@ -1,8 +1,7 @@
 import { makeObservable, observable, computed, action } from "mobx"
 
 export class Count {
-    @observable
-    public number = 0;
+    @observable public number = 0;
 
     @action increase = () => {
         this.number++;
