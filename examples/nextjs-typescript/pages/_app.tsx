@@ -28,24 +28,21 @@ function MyApp({Component, pageProps}: AppProps) {
                                     <a>Home</a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/test">
-                                    <a>Test</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/rxjs">
-                                    <a>rxjs</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/tailwind">
-                                    <a>tailwind</a>
-                                </Link>
-                            </li>
+                            {/*<li>*/}
+                            {/*    <Link href="/test">*/}
+                            {/*        <a>Test</a>*/}
+                            {/*    </Link>*/}
+                            {/*</li>*/}
+
+
                             <li>
                                 <Link href="/redux">
                                     <a>redux</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/mobx">
+                                    <a>mobx</a>
                                 </Link>
                             </li>
                             <li>
@@ -59,8 +56,23 @@ function MyApp({Component, pageProps}: AppProps) {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/mobx">
-                                    <a>mobx</a>
+                                <Link href="/tailwind">
+                                    <a>tailwind</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/rxjs">
+                                    <a>rxjs</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/custom-hook">
+                                    <a>custom-hook</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/apitest">
+                                    <a>api-test</a>
                                 </Link>
                             </li>
                             <li>
