@@ -32,6 +32,13 @@ Next.js
 ## tailwind
 * https://tailwindcss.com/docs/guides/nextjs
   * https://github.com/vercel/next.js/tree/4d4f3093019179b1928ec07c16f38882241c0375/examples/with-tailwindcss
+* screen
+  * https://tailwindcss.com/docs/screens
+* display
+  * https://tailwindcss.com/docs/display
+* composing
+  * https://www.youtube.com/watch?v=krSgBUmIgP0&list=PL7CcGwsqRpSM3w9BT_21tUU8JN2SnyckR&index=6
+
 
 ## SWR
 * https://swr.vercel.app/ko/docs/options
@@ -42,3 +49,7 @@ Next.js
 ## rxjs
 * https://www.youtube.com/watch?v=xUFxB23s9R4
 * https://www.youtube.com/watch?v=EsIYiRpDZuA
+
+## mobx
+* https://colinch4.github.io/2021-06-07/mobx/
+* https://github.com/wkddnjset/next-mobx-boilerplate

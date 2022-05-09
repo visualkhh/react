@@ -1,4 +1,23 @@
 # With env From next.config.js
+* https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser
+
+- NODE_ENV=production
+
+- .env.production.local
+- .env.local
+- .env.production
+- .env
+- NODE_ENV=development
+
+- .env.development.local
+- .env.local
+- .env.development
+- .env
+- NODE_ENV=test
+
+- .env.test.local
+- .env.test
+- .env
 
 This example demonstrates setting parameters that will be used by your application and set at build time (not run time).
 More specifically, what that means, is that environmental variables are programmed into the special configuration file `next.config.js` and then

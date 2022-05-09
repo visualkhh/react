@@ -1,8 +1,8 @@
 import {useCallback} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import * as counterActions from '../store/counter';
+import * as counterActions from '../redux-store/counter';
 import {Draft} from "@reduxjs/toolkit";
-import {RootState} from "../store";
+import {RootState} from "../redux-store";
 import useSWR from 'swr'
 import {useMutation, useQuery, useQueryClient} from "react-query";
 export default function Test() {

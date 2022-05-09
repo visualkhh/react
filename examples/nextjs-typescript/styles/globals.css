@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.btn {
+  @apply py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none;
+  margin: 10px
+}
 html,
 body {
   padding: 0;
