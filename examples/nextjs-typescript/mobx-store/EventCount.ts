@@ -1,7 +1,7 @@
 import { makeObservable, observable, computed, action } from "mobx"
 import {intervalEventObservable} from "../rxjs";
 
-class EventCount {
+export class EventCount {
     @observable
     public number = 0;
 

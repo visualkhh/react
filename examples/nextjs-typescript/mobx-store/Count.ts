@@ -1,6 +1,6 @@
 import { makeObservable, observable, computed, action } from "mobx"
 
-class Count {
+export class Count {
     @observable
     public number = 0;
 

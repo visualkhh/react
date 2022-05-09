@@ -1,4 +1,4 @@
-import {Dispatch, SetStateAction, useEffect, useState} from "react";
+import {Dispatch, EffectCallback, SetStateAction, useEffect, useState} from "react";
 import {Observable} from "rxjs";
 import {StateValue} from "./state/StateValue";
 export const makeEffectObservable = <T>(observable: Observable<T>) => {
@@ -13,6 +13,9 @@ export const makeEffectObservable = <T>(observable: Observable<T>) => {
     return r;
 }
 
+export const makeEffect = (effect: EffectCallback) => {
+    useEffect(effect, []);
+}
 
 export const makeStateValue = <T>(initialState: T) => {
     return new StateValue(initialState)

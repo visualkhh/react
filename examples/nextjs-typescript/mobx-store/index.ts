@@ -1,10 +1,13 @@
 import count from "./Count";
-import eventCount from "./EventCount";
+import eventCount, {EventCount} from "./EventCount";
 import React from "react";
 import {MobXProviderContext} from "mobx-react";
+import {Count} from "./Count";
 
-export default {
+const stores = {
     count,
     eventCount
 };
-export const useMobxStores = () => React.useContext(MobXProviderContext);
+export default stores;
+
+export const useMobxStores = (): typeof stores => React.useContext(MobXProviderContext) as any;
