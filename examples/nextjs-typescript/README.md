@@ -40,6 +40,10 @@ Next.js
   * https://www.youtube.com/watch?v=krSgBUmIgP0&list=PL7CcGwsqRpSM3w9BT_21tUU8JN2SnyckR&index=6
 
 
+## style-component
+* https://styled-components.com/
+* https://velog.io/@hwang-eunji/Styled-Components-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8
+
 ## SWR
 * https://swr.vercel.app/ko/docs/options
 
