@@ -1,9 +1,4 @@
-import {NextPage} from "next";
-import styles from "../styles/Home.module.css";
-import Head from "next/head";
-import Image from "next/image";
-
-export default () => {
+const Tailwind: React.FC = () => {
     return (
         <div>
             <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
@@ -26,10 +21,10 @@ export default () => {
                 <p>asdasd</p>
             </div>
             <div className="block md:hidden">
-                // my content
+                my content
             </div>
         </div>
     )
 };
-
-// export default User
+Tailwind.displayName = 'Tailwind';
+export default Tailwind;

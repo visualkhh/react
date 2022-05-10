@@ -3,13 +3,12 @@ import {RpcBreeds} from "../api/RpcBreeds";
 import {RpcCategories} from "../api/RpcCategories";
 import {RpcUser} from "../api/RpcUser";
 
-export default () => {
+const ApiTest: React.FC = () => {
     const [data, setData] = useState('-');
     const [categories, setCategories] = useState([] as {name: string}[]);
-    const rpcBreeds = new RpcBreeds('Abyssinian');
     const rpcCategories = new RpcCategories(5);
     useEffect(() => {
-        rpcBreeds.sendPromise()?.then(r => {
+        new RpcBreeds('Abyssinian').sendPromise()?.then(r => {
             setData(r[0].name);
         }).catch(it => {
 
@@ -37,11 +36,13 @@ export default () => {
                 <hr/>
                 <h3>**** Categorys</h3>
                 <ul className={'text-sm'}>
-                {categories.map((it, idx) => {
-                    return <li key={idx}>{it.name}</li>
-                })}
+                    {categories.map((it, idx) => {
+                        return <li key={idx}>{it.name}</li>
+                    })}
                 </ul>
             </div>
         </div>
     );
-}
+};
+ApiTest.displayName = 'ApiTest'
+export default ApiTest

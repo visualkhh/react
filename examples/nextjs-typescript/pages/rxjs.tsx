@@ -1,7 +1,7 @@
 import {useCallback, useEffect, useState} from 'react';
 import {intervalEventObservable} from "../rxjs";
 
-export default () => {
+const Rxjs: React.FC = () => {
     let [data, setData] = useState(0);
     useEffect(() => {
         const subscription = intervalEventObservable.subscribe(it => {
@@ -19,7 +19,9 @@ export default () => {
             <div>{data}</div>
         </div>
     );
-}
+};
+Rxjs.displayName = 'Rxjs';
+export default Rxjs
 
 // export default observer(() => {
 //     const { eventCount } = useMobxStores();
