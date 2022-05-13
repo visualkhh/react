@@ -2,9 +2,9 @@ export default function Home(props) {
     console.log(props)
   return (
     <div>
-      RESTURL_SPEAKERS {process.env.RESTURL_SPEAKERS}
+      RESTURL_SPEAKERS {process.env.ASD}
       <br />
-      RESTURL_SESSIONS {process.env.RESTURL_SESSIONS}
+      RESTURL_SESSIONS {process.env.NEXT_PUBLIC_ANALYTICS_ID}
     </div>
   )
 }

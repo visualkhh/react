@@ -2,6 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
+    "dev:test": "NODE_ENV=test next",
+    "dev:development": "NODE_ENV=development next",
     "build": "next build",
     "start": "next start"
   },

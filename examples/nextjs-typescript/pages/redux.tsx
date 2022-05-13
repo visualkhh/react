@@ -2,13 +2,16 @@ import {useCallback} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import * as counterActions from '../redux-store/counter';
 import {Draft} from "@reduxjs/toolkit";
-import {RootState} from "../redux-store";
+import {AppDispatch, RootState} from "../redux-store";
 
 export default function Test() {
+    // const dispatch = useDispatch<AppDispatch>();
     const dispatch = useDispatch();
     const value = useSelector(({counter}: RootState) => counter.count);
     const plus = useCallback(({value}: any) => {
-        dispatch(counterActions.increment());
+        const increment = counterActions.increment();
+        console.log('--------', increment)
+        dispatch(increment);
     }, [dispatch]);
     const minus = useCallback(({value}: any) => {
         dispatch(counterActions.decrement());
