@@ -23,7 +23,7 @@ import {observer} from "mobx-react-lite";
 // const myTimer = new Timer();
 const CountPage = () => {
     // const { count } = React.useContext(MobXProviderContext);
-    const { count } = useMobxStores();
+    const { count, eventCount } = useMobxStores();
     return (
         <div className="text-3xl font-bold underline">
             <h1>Mobx</h1>

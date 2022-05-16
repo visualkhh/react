@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let wow = 'visualkhh'
+  useEffect(() => {
+    wow = 'zz'
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <div><button onClick={() => {console.log('-->', wow)}}>aa</button></div>
       </header>
     </div>
   );
