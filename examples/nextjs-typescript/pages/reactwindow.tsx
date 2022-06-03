@@ -62,6 +62,7 @@ const ReactWindow: React.FC = () => {
           }
         }
       </Grid>
+      <img src={'https://www.baidu.com/img/bd_logo1.png'}/>
     </Fragment>
   );
 };
