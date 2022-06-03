@@ -21,6 +21,10 @@ Next.js
 
 
 # other
+## react-window
+* https://maybe-b50.tistory.com/67
+* https://web.dev/i18n/ko/virtualize-long-lists-react-window/
+
 ## redux-toolkit
 * https://redux-toolkit.js.org/tutorials/quick-start
 * https://www.youtube.com/watch?v=iBUJVy8phqw

@@ -76,6 +76,16 @@ function MyApp({Component, pageProps}: AppProps) {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/reactwindow">
+                                    <a>reactwindow</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/children">
+                                    <a>children</a>
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/blog/hello-world">
                                     <a>Blog Post</a>
                                 </Link>
