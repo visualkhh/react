@@ -66,6 +66,11 @@ function MyApp({Component, pageProps}: AppProps) {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/test">
+                                    <a>test</a>
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/custom-hook">
                                     <a>custom-hook</a>
                                 </Link>
