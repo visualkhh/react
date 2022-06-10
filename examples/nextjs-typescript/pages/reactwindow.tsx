@@ -46,7 +46,6 @@ const ReactWindow: React.FC = () => {
         rowCount={rowCount}
         rowHeight={35}
         width={500}
-
       >
         {
           (props: { columnIndex: number, rowIndex: number, style: any }) => {
@@ -56,7 +55,7 @@ const ReactWindow: React.FC = () => {
             }
             return (
               <div style={props.style}>
-                Item {props.rowIndex},{props.columnIndex}
+                Item {props.rowIndex},{props.columnIndex} {Date.now()}
               </div>
             )
           }
