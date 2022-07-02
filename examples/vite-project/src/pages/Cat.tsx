@@ -11,6 +11,7 @@ function Cat () {
     <div className="catDetail">
       <h1>{data?.id}</h1>
       <p><img src={data?.url} /></p>
+      
     </div>
   )
 }

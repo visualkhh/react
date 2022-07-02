@@ -14,9 +14,12 @@ function Home() {
             <h1>Home</h1>
             <p>{data?.map(({url, id}, idx) => {
                 return (
+                    <div>
                     <Link to={`/cats/${id}`}>
                         <div>{idx}: <img src={url}/> {id}</div>
                     </Link>
+                        <button>담기</button>
+                    </div>
                 )
             })}
             </p>
