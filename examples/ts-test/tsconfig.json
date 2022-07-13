@@ -1,0 +1,23 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+//    "jsx": "react-jsx",
+    "jsxFactory": "React.createElement",
+    "baseUrl": ".",
+    "paths": {
+      "react/*": [
+        "react/*"
+      ]
+    },
+    "module": "Commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "es5"
+  }
+}
